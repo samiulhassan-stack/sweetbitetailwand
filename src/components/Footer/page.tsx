@@ -15,13 +15,21 @@ export default function Footer() {
           <Link to="/"        className="text-[#D7B98E] no-underline py-1 text-[14px] hover:text-[#D4AF37] transition-colors duration-300">Home</Link>
           <Link to="/menu"    className="text-[#D7B98E] no-underline py-1 text-[14px] hover:text-[#D4AF37] transition-colors duration-300">Menu</Link>
           <Link to="/gallery" className="text-[#D7B98E] no-underline py-1 text-[14px] hover:text-[#D4AF37] transition-colors duration-300">Gallery</Link>
-          <Link to="/reviews" className="text-[#D7B98E] no-underline py-1 text-[14px] hover:text-[#D4AF37] transition-colors duration-300">Reviews</Link>
+          <Link to="/about"   className="text-[#D7B98E] no-underline py-1 text-[14px] hover:text-[#D4AF37] transition-colors duration-300">About</Link>
+          <Link to="/teams"   className="text-[#D7B98E] no-underline py-1 text-[14px] hover:text-[#D4AF37] transition-colors duration-300">Teams</Link>
         </div>
 
         <div className="flex flex-col flex-1 min-w-[200px]">
           <h2 className="text-[18px] font-bold text-[#D4AF37] mb-2.5">Customer</h2>
           <Link to="/order"     className="text-[#D7B98E] no-underline py-1 text-[14px] hover:text-[#D4AF37] transition-colors duration-300">Order</Link>
+          <Link to="/cart"      className="text-[#D7B98E] no-underline py-1 text-[14px] hover:text-[#D4AF37] transition-colors duration-300">Cart</Link>
           <Link to="/contact"   className="text-[#D7B98E] no-underline py-1 text-[14px] hover:text-[#D4AF37] transition-colors duration-300">Contact</Link>
+          <Link to="/reviews"   className="text-[#D7B98E] no-underline py-1 text-[14px] hover:text-[#D4AF37] transition-colors duration-300">Reviews</Link>
+          <Link to="/profile"   className="text-[#D7B98E] no-underline py-1 text-[14px] hover:text-[#D4AF37] transition-colors duration-300">Profile</Link>
+        </div>
+
+        <div className="flex flex-col flex-1 min-w-[200px]">
+          <h2 className="text-[18px] font-bold text-[#D4AF37] mb-2.5">Admin</h2>
           <Link to="/dashboard" className="text-[#D7B98E] no-underline py-1 text-[14px] hover:text-[#D4AF37] transition-colors duration-300">Dashboard</Link>
         </div>
 

@@ -101,6 +101,24 @@ export default function Navbar() {
               </li>
               <li>
                 <Link
+                  to="/about"
+                  onClick={() => { setMenuOpen(false); setDropdownOpen(false) }}
+                  className="block px-4 py-2.5 text-[#FAF3E0] no-underline hover:text-[#D4AF37] transition-all duration-300"
+                >
+                  About
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/teams"
+                  onClick={() => { setMenuOpen(false); setDropdownOpen(false) }}
+                  className="block px-4 py-2.5 text-[#FAF3E0] no-underline hover:text-[#D4AF37] transition-all duration-300"
+                >
+                  Teams
+                </Link>
+              </li>
+              <li>
+                <Link
                   to="/dashboard"
                   onClick={() => { setMenuOpen(false); setDropdownOpen(false) }}
                   className="block px-4 py-2.5 text-[#FAF3E0] no-underline hover:text-[#D4AF37] transition-all duration-300"
@@ -110,6 +128,16 @@ export default function Navbar() {
               </li>
             </ul>
           )}
+        </li>
+
+        <li className="md:w-auto w-full text-center">
+          <Link
+            to="/cart"
+            onClick={() => setMenuOpen(false)}
+            className="block px-3 py-2 text-[#FAF3E0] no-underline font-medium rounded hover:text-[#D4AF37] transition-all duration-300 md:border-b-0 border-b border-[#5D4037]"
+          >
+            Cart
+          </Link>
         </li>
 
         <li className="md:w-auto w-full text-center">
@@ -151,6 +179,17 @@ export default function Navbar() {
             className="inline-block px-3.5 py-1.5 text-sm font-semibold text-[#3E2723] bg-[#D4AF37] border border-[#D4AF37] rounded no-underline hover:bg-transparent hover:text-[#D4AF37] transition-all duration-300"
           >
             Signup
+          </Link>
+        </li>
+
+        {/* Profile */}
+        <li className="md:w-auto w-full text-center px-1">
+          <Link
+            to="/profile"
+            onClick={() => setMenuOpen(false)}
+            className="inline-block px-3.5 py-1.5 text-sm font-semibold text-[#D4AF37] border border-[#D4AF37] rounded bg-transparent no-underline hover:bg-[#D4AF37] hover:text-[#3E2723] transition-all duration-300"
+          >
+            Profile
           </Link>
         </li>
 

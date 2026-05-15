@@ -9,6 +9,10 @@ import Contact from './pages/Contact/page'
 import Login from './pages/Login/page'
 import Signup from './pages/Signup/page'
 import Dashboard from './pages/Dashboard/page'
+import Cart from './pages/Cart/page'
+import Teams from './pages/Teams/page'
+import About from './pages/About/page'
+import Profile from './pages/Profile/page'
 
 function Home() {
   return (
@@ -95,6 +99,10 @@ export default function App() {
         <Route path="/login"     element={<Login />} />
         <Route path="/signup"    element={<Signup />} />
         <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/cart"      element={<Cart />} />
+        <Route path="/teams"     element={<Teams />} />
+        <Route path="/about"     element={<About />} />
+        <Route path="/profile"   element={<Profile />} />
       </Routes>
     </BrowserRouter>
   )
